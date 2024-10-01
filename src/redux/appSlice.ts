@@ -1,5 +1,5 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { optionType } from "../Common/Input/DropDown/DropDownField";
+import { optionType } from "../common/DropDown/DropDownField";
 
 
 interface AppState {
@@ -25,5 +25,5 @@ const appSlice = createSlice({
   },
 });
 
-export const { setSelected1, setInputValue } = appSlice.actions;
-export default appSlice.reducer;
+export const appActions = appSlice.actions;
+export const appReducer = appSlice.reducer;
